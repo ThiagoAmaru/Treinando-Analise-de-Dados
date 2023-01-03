@@ -8,6 +8,8 @@ tamanho = data.shape
 atributos = data.columns
 preco = data[['id', 'price']].sort_values('price', ascending = False)
 quartos = data[['id', 'bedrooms']].sort_values('bedrooms', ascending = False)
+quartos2 = (data[['bedrooms']])
+soma_quartos = (quartos2.sum(axis=0))
 
 
 print('01P: Quantas casas estão disponiveis para compra?')
@@ -28,7 +30,7 @@ print('05P: Qual a casa maior numero de quartos?')
 print('R= A casa mais cara é a', quartos.iloc[0])
 print('='*70)
 print('06P: Qual a soma total de quarto do conjunto de dados?')
-print('R= ')
+print('R= A soma total dos', soma_quartos, 'quartos')
 print('='*70)
 print('07P: Quantas casas possuem 2 banheiros?')
 print('R= ')
