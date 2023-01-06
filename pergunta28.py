@@ -8,3 +8,4 @@ print(dia.head(1))
 
 
 #Qual a data mais antiga de construçao de um imovel
+# Usou o comando .min()

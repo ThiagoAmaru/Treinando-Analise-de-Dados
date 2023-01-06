@@ -2,7 +2,7 @@ import pandas as pd
 
 data = pd.read_csv('dataset/kc_house_data.csv')
 
-data['dormitory'] = 'dormitorio'
+data['dormitory_type'] = 'dormitorio'
 
 data.loc[data['bedrooms'] == 1, 'dormitory_type'] = 'studio'
 
@@ -17,3 +17,4 @@ print(data.head(10))
 # 	se o valor da coluna 'bedrooms, for igual a 1 => 'studio'
 #   se o valor da coluna 'bedrooms, for igual a 2 => 'apartament'
 #   se o valor da coluna 'bedrooms, for igual maior que dois => 'house'
+# Utilizou o NP Where do Numpy (condicional, acao true, acao false) => so funciona com arrays do numpy

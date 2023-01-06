@@ -11,15 +11,10 @@ data.loc[data['condition'] == 4 , 'condition_type'] = 'regular'
 
 data.loc[data['condition'] > 4, 'condition_type'] = 'good'
 
-
-print(data.head(10))
-
+print(data.loc[data['condition_type'] == 'regular'].shape[0])
 
 
-# 3. Crie uma nova coluna chamada condition_type
-# 	se o valor da coluna 'condition', for menor igual a => 'bad'
-#   se o valor da coluna 'condition', for igual a 3 ou 4 => 'regular'
-#   se o valor da coluna 'condition', for igual a 5 => 'good'
 
-#Comando or em Python é com |
 
+
+# 11. Quantos imoveis estao com a condicao igual a regular

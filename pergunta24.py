@@ -10,4 +10,4 @@ print(data['condition'].dtypes)
 
 
 # modifique o tipo da coluna conditioon para String
-#virou um objeto, esperar correção
+#virou um objeto, esperar correção # foi um objeto mesmo
